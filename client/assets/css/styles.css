@@ -528,14 +528,14 @@ display: block;
 
 
 
-@media screen and (max-width:380px){
+@media screen and (max-width:395px){
 
     #footer .author{
-        right: 140px;
+        right: 150px;
     }
 
     #burger{
-        right: 75px;
+        right: 84px;
     }
 
 
@@ -560,5 +560,11 @@ display: block;
 }
 
 @media screen and (max-width:360px){
+    #footer .author{
+        right: 140px;
+    }
 
+    #burger{
+        right: 75px;
+    }
 }
