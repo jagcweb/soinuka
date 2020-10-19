@@ -193,7 +193,6 @@ display: block;
     box-shadow: 0px 0px 2px black;
     background: #f9f9f9;
     font-family: "Bebas";
-    overflow: hidden;
 
 }
 #footer{
@@ -577,7 +576,7 @@ display: block;
 
     
     #logo{
-        padding-left: 20px!important;
+        margin-left: -65px!important;
     }
 
     #footer .logo-footer{
