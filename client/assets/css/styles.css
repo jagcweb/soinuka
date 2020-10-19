@@ -139,9 +139,9 @@ display: block;
 
 
 #language{
-    position: absolute;
-    top: 110px;
-    right: 184px;
+    position: fixed;
+    top: 108px;
+    right: 185px;
     margin: 0px auto;
     padding: 0px;
     width:125px;
@@ -149,7 +149,7 @@ display: block;
     visibility: hidden;
     transition: visibility 5ms;
     border: 1px solid black;
-    border-right: none;
+    background-color: #f9f9f9;
 }
 
 
@@ -193,6 +193,7 @@ display: block;
     box-shadow: 0px 0px 2px black;
     background: #f9f9f9;
     font-family: "Bebas";
+    overflow: hidden;
 
 }
 #footer{
@@ -524,6 +525,37 @@ display: block;
         width: 50%;
     }
 
+    #footer .fb, #footer .insta{
+        font-size: 33px;
+    }
+
+    #footer .insta{
+        margin-left: -5px;
+    }
+
+    #footer .fb{
+        margin-right: 70px;
+    }
+
+}
+
+
+@media screen and (max-width:430px){
+
+    #logo{
+        margin-left: -50px;
+    }
+    #burger{
+        right: 90px;
+    }
+
+    #footer .fb{
+        margin-right: 50px;
+    }
+
+    #footer .insta{
+        margin-right: 30px;
+    }
 }
 
 
@@ -532,6 +564,10 @@ display: block;
 
     #footer .author{
         right: 150px;
+    }
+
+    #footer .fb, #footer .insta{
+        font-size: 33px!important;
     }
 
     #burger{
@@ -557,6 +593,7 @@ display: block;
     #footer .fb{
         margin-right: 60px;
     }
+
 }
 
 @media screen and (max-width:360px){
