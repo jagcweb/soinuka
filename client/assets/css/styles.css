@@ -43,8 +43,8 @@ body{
 }
 
 #header{
-    display: block;
     position: sticky;
+    position: -webkit-sticky;
     top: 0;
     width: 100%;
     background-color: black;
@@ -150,6 +150,7 @@ display: block;
     transition: visibility 5ms;
     border: 1px solid black;
     background-color: #f9f9f9;
+    z-index: 9999;
 }
 
 
@@ -188,13 +189,13 @@ display: block;
     margin: 0px auto;
     padding: 0px;
     min-height: 590px;
-    padding: 25px;
-    width: 75.6%;
-    box-shadow: 0px 0px 2px black;
-    background: #f9f9f9;
+    padding-top: 15px;
+    padding-bottom: 15px;
     font-family: "Bebas";
-
+    width: 80%;
+    box-shadow: 0px 0px 25px #333;
 }
+
 #footer{
     position: absolute;
     bottom: 0;
@@ -331,8 +332,32 @@ display: block;
     }
 }
 
+@media screen and (max-width:1190px){
+    #header ul{
+        margin-right: 100px!important;
+    }
 
-@media screen and (max-width:1028px){
+    #language{
+        right: 100px!important;
+    }
+
+    #logo{
+        padding-left: 100px;
+    }
+
+    #footer .logo-footer{
+        margin-left: 100px;
+    }
+
+    #footer .fb{
+        margin-right: 90px;
+        margin-left: 15px;
+    }
+}
+
+
+
+@media screen and (max-width:1100px){
 
     #header{
         height:90px;
@@ -346,6 +371,7 @@ display: block;
         padding-left: 15px;
         padding-right: 15px;
         line-height: 90px;
+        margin-top: -1px;
     }
 
     #nav ul li a {
@@ -363,7 +389,7 @@ display: block;
 
 
     #language{
-        right: 100px!important;
+        right: 90px!important;
         width: 85px;
         height: 38px;
         top: 89px;
@@ -403,17 +429,66 @@ display: block;
     }
 }
 
+@media screen and (max-width:900px){
+
+    #logo{
+        position: absolute;
+        margin: 0px;
+        padding: 0px;
+        left: 25px;
+        top: 10px;
+    }
+
+    #header ul{
+        margin: 0px!important;
+    }
+
+    #nav ul{
+        position: absolute;
+        margin: 0px;
+        padding: 0px;
+        right: 70px!important;
+        top: 1px;
+    }
+
+    #language{
+        width: 100px!important;
+        right: 40px!important;
+    }
+
+
+}
+
 
 
 @media screen and (max-width:768px){
     #footer .author{
         right: 300px;
     }
+    #logo{
+        position: absolute;
+        margin: 0px;
+        padding: 0px;
+        left: 25px;
+        top: 10px;
+    }
+    #header{
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+    }
+
+    #content{
+        padding-top: 45px;
+    }
+
     #burger{
         display: block;
         position: absolute;
         cursor: pointer;
-        right: 80px;
+        right: 25px;
         top: 30px;
     }
 
@@ -424,7 +499,7 @@ display: block;
 
     #nav ul{
         position: absolute;
-        right: 0px;
+        right: 0px!important;
         width: 25%;
         height:500px;
         top: 90px;
@@ -516,9 +591,6 @@ display: block;
     #footer .author{
         right: 180px;
     }
-    #burger{
-        right: 105px;
-    }
 
     #nav ul{
         width: 50%;
@@ -541,13 +613,6 @@ display: block;
 
 @media screen and (max-width:430px){
 
-    #logo{
-        margin-left: -50px;
-    }
-    #burger{
-        right: 90px;
-    }
-
     #footer .fb{
         margin-right: 50px;
     }
@@ -569,15 +634,6 @@ display: block;
         font-size: 33px!important;
     }
 
-    #burger{
-        right: 84px;
-    }
-
-
-    
-    #logo{
-        margin-left: -65px!important;
-    }
 
     #footer .logo-footer{
         margin-left: 20px;
@@ -598,9 +654,5 @@ display: block;
 @media screen and (max-width:360px){
     #footer .author{
         right: 140px;
-    }
-
-    #burger{
-        right: 75px;
     }
 }
